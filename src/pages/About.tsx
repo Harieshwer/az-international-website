@@ -1,40 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Award, Leaf, Globe2, Heart } from "lucide-react";
 import Chilli from "../assets/Redchilli.png.png";
 import Cardamom from "../assets/Cardamom.png";
 import Pepper from "../assets/BlackPepper.png";
 
 const About: React.FC = () => {
-  const values = [
-    {
-      icon: <Leaf className="w-8 h-8" />,
-      title: "Natural & Pure",
-      description:
-        "Sourced from organic farms with zero artificial additives or preservatives.",
-      color: "from-emerald-500 to-emerald-600",
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: "Quality Certified",
-      description:
-        "ISO certified processing with rigorous quality checks at every stage.",
-      color: "from-teal-500 to-teal-600",
-    },
-    {
-      icon: <Globe2 className="w-8 h-8" />,
-      title: "Global Reach",
-      description:
-        "Delivering authentic spices to customers across 30+ countries worldwide.",
-      color: "from-teal-600 to-teal-700",
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Family Heritage",
-      description:
-        "Three generations of expertise in selecting and processing premium spices.",
-      color: "from-rose-500 to-rose-600",
-    },
-  ];
+  
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [Chilli, Cardamom, Pepper];

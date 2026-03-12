@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Menu, X } from "lucide-react";
 import Az from "../assets/logo.png";
 
@@ -15,17 +15,9 @@ const defaultMessage = encodeURIComponent(
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 
 const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+ 
   const navLinks: NavItem[] = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
