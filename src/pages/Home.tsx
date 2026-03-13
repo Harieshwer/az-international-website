@@ -35,15 +35,14 @@ const Home: React.FC = () => {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Pure Spices,
+              Pure Spices, Cereals and Pulses
               <span className="block text-transparent bg-gradient-to-r from-teal-300 to-emerald-400 bg-clip-text">
                 Perfect Flavors
               </span>
             </h1>
 
             <p className="text-xl text-teal-100 leading-relaxed max-w-xl">
-              Discover the finest collection of authentic spices from around the
-              world. Hand-selected, carefully processed, and delivered fresh to
+              Discover the finest collection of authentic spices, cereals and pulses from India. Hand-selected, carefully processed, and delivered fresh to
               preserve nature’s perfect flavors.
             </p>
 
@@ -68,34 +67,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
-              <div>
-                <div className="text-4xl font-bold text-emerald-300">
-                  100+
-                </div>
-                <div className="text-sm text-teal-200 mt-1">
-                  Premium Spices
-                </div>
-              </div>
-
-              <div>
-                <div className="text-4xl font-bold text-emerald-300">
-                  28+
-                </div>
-                <div className="text-sm text-teal-200 mt-1">
-                  Years Experience
-                </div>
-              </div>
-
-              <div>
-                <div className="text-4xl font-bold text-emerald-300">
-                  50K+
-                </div>
-                <div className="text-sm text-teal-200 mt-1">
-                  Happy Customers
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Right Side Product Cards */}
